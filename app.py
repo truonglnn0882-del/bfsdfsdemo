@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import folium, json, networkx as nx, os
 from collections import deque
-import osmnx as ox
+
 
 # --- Cấu hình Flask ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -101,4 +101,5 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
